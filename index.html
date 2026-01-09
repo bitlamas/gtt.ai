@@ -1,101 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>gtt.ai - Premium 3-Letter AI Domain for Sale</title>
-     <style>
-         /* Base styles */
-         body {
-             margin: 0;
-             padding: 0;
-             font-family: 'Arial', sans-serif;
-             background-color: #fff;
-             color: #333;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             min-height: 100vh;
-             text-align: center;
-             line-height: 1.6;
-             padding: 20px;
-         }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gtt.ai — Premium 3-Letter .AI Domain</title>
+    <meta name="description" content="Acquire gtt.ai — an ultra-rare 3-letter .ai domain. One of only 17,576 possible combinations in the fastest-growing TLD in tech.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #0a0a0a;
+            --color-surface: #111111;
+            --color-border: #1a1a1a;
+            --color-text: #fafafa;
+            --color-text-muted: #737373;
+            --color-accent: #c9a227;
+            --color-accent-soft: rgba(201, 162, 39, 0.15);
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+        }
 
-         h1 {
-             font-size: 3rem;
-             color: #111;
-             margin-bottom: 20px;
-             letter-spacing: 1px;
-             text-transform: lowercase;
-         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-         p {
-             font-size: 1.1rem;
-             color: #555;
-             margin-bottom: 30px;
-             max-width: 800px;
-             margin-left: auto;
-             margin-right: auto;
-             line-height: 1.6;
-         }
+        html {
+            scroll-behavior: smooth;
+        }
 
-         .email {
-             font-size: 1.1rem;
-             font-weight: bold;
-             color: #fff;
-             background-color: #007bff;
-             text-decoration: none;
-             border: none;
-             padding: 12px 30px;
-             text-transform: uppercase;
-             letter-spacing: 1px;
-             transition: all 0.3s ease;
-             border-radius: 4px;
-             display: inline-block;
-         }
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-weight: 300;
+            overflow-x: hidden;
+        }
 
-         .email:hover {
-             background-color: #0056b3;
-             color: #fff;
-         }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
 
-         /* Background and container styles */
-         .container {
-             background-color: #f8f9fa;
-             color: #333;
-             padding: 40px 20px;
-             border-radius: 8px;
-             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-             max-width: 900px;
-         }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-         /* Mobile optimization */
-         @media (max-width: 600px) {
-             h1 {
-                 font-size: 2.2rem;
-             }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 24px;
+            position: relative;
+        }
 
-             p {
-                 font-size: 1rem;
-             }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--color-accent-soft) 0%, transparent 70%);
+            opacity: 0.4;
+            pointer-events: none;
+        }
 
-             .email {
-                 font-size: 1rem;
-                 padding: 10px 20px;
-             }
-         }
-     </style>
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 100px;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .domain-name {
+            font-family: var(--font-display);
+            font-size: clamp(5rem, 18vw, 14rem);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            line-height: 0.9;
+            margin-bottom: 32px;
+            animation: fadeInUp 0.8s ease-out 0.1s both;
+        }
+
+        .domain-name span {
+            color: var(--color-accent);
+        }
+
+        .tagline {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-style: italic;
+            color: var(--color-text-muted);
+            margin-bottom: 48px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 40px;
+            background: var(--color-accent);
+            color: var(--color-bg);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+
+        .cta-primary:hover {
+            background: #d4af37;
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(201, 162, 39, 0.2);
+        }
+
+        .cta-primary svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-primary:hover svg {
+            transform: translateX(4px);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text-muted);
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            animation: fadeInUp 0.8s ease-out 0.5s both;
+        }
+
+        .scroll-indicator::after {
+            content: '';
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--color-text-muted), transparent);
+            animation: scrollPulse 2s infinite;
+        }
+
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.3; transform: scaleY(1); }
+            50% { opacity: 1; transform: scaleY(1.2); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            padding: 120px 24px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 32px;
+            max-width: 800px;
+        }
+
+        .section-text {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            max-width: 600px;
+            margin-bottom: 48px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1px;
+            background: var(--color-border);
+            border: 1px solid var(--color-border);
+            margin: 64px 0;
+        }
+
+        .stat {
+            background: var(--color-bg);
+            padding: 40px 32px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: var(--color-text);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+        }
+
+        .reasons {
+            display: grid;
+            gap: 0;
+            border: 1px solid var(--color-border);
+        }
+
+        .reason {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 32px;
+            padding: 40px 32px;
+            border-bottom: 1px solid var(--color-border);
+            transition: background 0.3s ease;
+        }
+
+        .reason:last-child {
+            border-bottom: none;
+        }
+
+        .reason:hover {
+            background: var(--color-surface);
+        }
+
+        .reason-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            color: var(--color-border);
+            line-height: 1;
+        }
+
+        .reason-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .reason-content p {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        .sales-table {
+            border: 1px solid var(--color-border);
+            margin: 48px 0;
+        }
+
+        .sales-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+            padding: 16px 24px;
+            background: var(--color-surface);
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .sales-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--color-border);
+            transition: background 0.3s ease;
+        }
+
+        .sales-row:last-child {
+            border-bottom: none;
+        }
+
+        .sales-row:hover {
+            background: var(--color-surface);
+        }
+
+        .sales-domain {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+        }
+
+        .sales-price {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+
+        .sales-year {
+            color: var(--color-text-muted);
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 160px 24px;
+            background: var(--color-surface);
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 400px;
+            background: radial-gradient(ellipse, var(--color-accent-soft) 0%, transparent 70%);
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .cta-section .domain-name {
+            font-size: clamp(3rem, 10vw, 7rem);
+            margin-bottom: 24px;
+        }
+
+        .cta-section .tagline {
+            margin-bottom: 16px;
+        }
+
+        .price-note {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-bottom: 40px;
+        }
+
+        .price-note strong {
+            color: var(--color-text);
+            font-weight: 500;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 40px;
+            background: transparent;
+            color: var(--color-text);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border: 1px solid var(--color-border);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--color-text);
+            background: rgba(255,255,255,0.03);
+        }
+
+        .trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+            color: var(--color-text-muted);
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .trust-badges span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .trust-badges svg {
+            width: 16px;
+            height: 16px;
+            opacity: 0.5;
+        }
+
+        footer {
+            padding: 40px 24px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            border-top: 1px solid var(--color-border);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+                min-height: auto;
+                padding-top: 120px;
+                padding-bottom: 120px;
+            }
+
+            .section {
+                padding: 80px 20px;
+            }
+
+            .reason {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .reason-number {
+                font-size: 2rem;
+            }
+
+            .sales-header,
+            .sales-row {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .sales-header > *:last-child,
+            .sales-row > *:last-child {
+                display: none;
+            }
+
+            .stat {
+                padding: 32px 24px;
+            }
+
+            .cta-section {
+                padding: 100px 20px;
+            }
+
+            .scroll-indicator {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-     <div class="container">
-         <h1>gtt.ai</h1>
-         <p>
-             a rare 3-letter .ai domain with immediate brand recognition. <br><br>
-             gtt.ai offers instant association with the world's most recognized ai brand—gpt—while maintaining its own distinct identity. considering existing businesses like gttData, this domain has proven market viability in the data and artificial intelligence sector. <br><br>
-             with around 10% of three-letter .ai domains remaining available, this is one of the last opportunities to secure a premium short-form domain in the fastest-growing extension in tech. whether you're launching an ai startup, rebranding an existing platform, or building a portfolio of high-value digital assets, gtt.ai delivers instant credibility and memorability. <br><br>
-             serious inquiries only. offers starting at six figures will be considered.
-         </p>
-         <a href="mailto:offer@gtt.ai" class="email">make an offer</a>
-     </div>
+    <section class="hero">
+        <div class="badge">Now Available</div>
+        <h1 class="domain-name">gtt<span>.ai</span></h1>
+        <p class="tagline">Three letters. Infinite potential.</p>
+        <a href="mailto:offer@gtt.ai" class="cta-primary">
+            Submit an Offer
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+        </a>
+        <div class="scroll-indicator">Why this domain</div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="section-label">The Opportunity</p>
+            <h2 class="section-title">The .ai extension has become the defining mark of the AI era.</h2>
+            <p class="section-text">In 2022, there were 60,000 .ai domains registered. Today, there are over 550,000 — and the extension now ranks #3 globally in total aftermarket sales value, behind only .com. Premium .ai domains have appreciated 200–500% in three years.</p>
+            
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-value">17,576</div>
+                    <div class="stat-label">Total 3-letter combinations possible</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">900%</div>
+                    <div class="stat-label">.ai registration growth since 2022</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">#3</div>
+                    <div class="stat-label">Global TLD by sales value</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">$1.8T</div>
+                    <div class="stat-label">Projected AI market by 2032</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="section-label">Why gtt.ai</p>
+            <h2 class="section-title">Rare, premium, and immediately deployable.</h2>
+            
+            <div class="reasons">
+                <div class="reason">
+                    <div class="reason-number">01</div>
+                    <div class="reason-content">
+                        <h3>Mathematical scarcity</h3>
+                        <p>Only 17,576 three-letter .ai combinations can ever exist. The overwhelming majority are already registered. This isn't artificial scarcity — it's arithmetic.</p>
+                    </div>
+                </div>
+                <div class="reason">
+                    <div class="reason-number">02</div>
+                    <div class="reason-content">
+                        <h3>Premium letter composition</h3>
+                        <p>G and T are both classified as premium letters in domain valuation — easy to pronounce, universally recognized, and free of ambiguity in any language. GTT is clean, balanced, and memorable.</p>
+                    </div>
+                </div>
+                <div class="reason">
+                    <div class="reason-number">03</div>
+                    <div class="reason-content">
+                        <h3>Versatile brandability</h3>
+                        <p>GTT can represent virtually anything: a company name, an acronym, a product line. It carries no baggage, no negative associations, no trademark conflicts in the AI space.</p>
+                    </div>
+                </div>
+                <div class="reason">
+                    <div class="reason-number">04</div>
+                    <div class="reason-content">
+                        <h3>The .ai advantage</h3>
+                        <p>The .ai extension immediately signals innovation, technology, and forward-thinking. It's not a workaround for an unavailable .com — it's a deliberate positioning statement that resonates with investors, users, and the market.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p class="section-label">Market Context</p>
+            <h2 class="section-title">Recent premium .ai domain sales.</h2>
+            <p class="section-text">The market has spoken. Short, memorable .ai domains are commanding extraordinary prices as AI transforms every industry.</p>
+            
+            <div class="sales-table">
+                <div class="sales-header">
+                    <span>Domain</span>
+                    <span>Sale Price</span>
+                    <span>Year</span>
+                </div>
+                <div class="sales-row">
+                    <span class="sales-domain">Voice.ai</span>
+                    <span class="sales-price">$30,000,000</span>
+                    <span class="sales-year">2024</span>
+                </div>
+                <div class="sales-row">
+                    <span class="sales-domain">X.ai</span>
+                    <span class="sales-price">$10,000,000*</span>
+                    <span class="sales-year">2024</span>
+                </div>
+                <div class="sales-row">
+                    <span class="sales-domain">Fin.ai</span>
+                    <span class="sales-price">$1,000,000</span>
+                    <span class="sales-year">2024</span>
+                </div>
+                <div class="sales-row">
+                    <span class="sales-domain">You.ai</span>
+                    <span class="sales-price">$700,000</span>
+                    <span class="sales-year">2024</span>
+                </div>
+                <div class="sales-row">
+                    <span class="sales-domain">Mini.ai</span>
+                    <span class="sales-price">$100,000</span>
+                    <span class="sales-year">2024</span>
+                </div>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 16px;">*Reported/rumored. Source: NameBio, Sedo, Afternic</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 class="domain-name">gtt<span>.ai</span></h2>
+        <p class="tagline">Own a piece of the AI era.</p>
+        <p class="price-note">Serious inquiries only. Offers starting at <strong>six figures</strong> will be considered.</p>
+        
+        <div class="cta-buttons">
+            <a href="mailto:offer@gtt.ai" class="cta-primary">
+                Submit an Offer
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            <a href="mailto:offer@gtt.ai?subject=Question about gtt.ai" class="cta-secondary">
+                Ask a Question
+            </a>
+        </div>
+
+        <div class="trust-badges">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Escrow available
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+                Immediate transfer
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                offer@gtt.ai
+            </span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            © 2025 gtt.ai — Premium domain acquisition
+        </div>
+    </footer>
 </body>
 </html>
